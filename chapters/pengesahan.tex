@@ -1,0 +1,68 @@
+%lembar pengesahan
+\newpage
+\addcontentsline{toc}{chapter}{HALAMAN PENGESAHAN}
+\newgeometry{top=2cm, left=2cm, right=2cm, bottom=1.2cm, includefoot, footskip=0.8cm}
+
+{%
+% ============================================================
+% Blok ini SENGAJA di-isolasi total dari preambel dokumen utama:
+% - font di-paksa ke Times New Roman (ptm), tidak ikut \usepackage lain
+% - \parskip, \parindent, \linespread di-reset ke default LaTeX standar,
+%   supaya baris kosong di source TIDAK kena tambahan spacing dari
+%   preambel (mis. \setlength{\parskip}{...} global)
+% - Semua jarak vertikal HANYA berasal dari \vspace eksplisit di bawah;
+%   tidak ada spacing implisit dari pergantian paragraf.
+% ============================================================
+    \fontfamily{ptm}\fontseries{m}\fontshape{n}\fontsize{12}{14.4}\selectfont
+    \setlength{\parskip}{0pt}%
+    \setlength{\parindent}{0pt}%
+    \renewcommand{\baselinestretch}{1}\selectfont%
+    \begin{center}
+    \begin{singlespace}
+    \textbf{\fontseries{b}\selectfont HALAMAN PENGESAHAN}\par
+    \textbf{\fontseries{b}\selectfont TUGAS AKHIR}\par
+    \vspace{\baselineskip}
+    \textbf{\fontseries{b}\selectfont \judulid}\par
+    \vspace{\baselineskip}
+    \vspace{8pt}
+    \textbf{\fontseries{b}\selectfont Disusun oleh:}\par
+    \vspace{8pt}
+    \penulis\par
+    \nim\par
+    Program Studi \prodi\par
+    \vspace{2\baselineskip}
+    \textbf{\fontseries{b}\selectfont Telah dipertanggungjawabkan dan diterima oleh Tim Penguji}\par
+    \textbf{\fontseries{b}\selectfont sebagai salah satu persyaratan untuk memperoleh gelar Sarjana Terapan}\par
+    Tanggal Ujian: \tglpengesahan\par
+    \vspace{\baselineskip}
+    \textbf{\fontseries{b}\selectfont Ketua Penguji}\par
+    \vspace{2\baselineskip}
+    \ketuapenguji\par
+    NIP. \NIPketuapenguji\par
+    \vspace{\baselineskip}
+    \textbf{\fontseries{b}\selectfont Sekretaris Penguji / Dosen Pembimbing}\par
+    \vspace{2\baselineskip}
+    \pembimbing\par
+    NIP. \NIPpembimbing\par
+    \vspace{\baselineskip}
+    \textbf{\fontseries{b}\selectfont Anggota Penguji}\par
+    \vspace{2\baselineskip}
+    \anggotapenguji\par
+    NIP. \NIPanggotapenguji\par
+    \vspace{2\baselineskip}
+    \textbf{\fontseries{b}\selectfont Ketua Program Studi \prodi}\par
+    \vspace{2\baselineskip}
+    \koorprodi\par
+    NIP. \NIPKaprodi\par
+    \vspace{\baselineskip}
+    \hspace{2cm}Tanggal Pengesahan: \underline{\hspace{2.5cm}}\par
+    \textbf{\fontseries{b}\selectfont Mengetahui,}\par
+    \textbf{\fontseries{b}\selectfont Ketua \departemen}\par
+    \vspace{3\baselineskip}
+    \koordepartemen\par
+    NIP. \NIPkadep\par
+    \end{singlespace}
+    \end{center}
+}
+
+\restoregeometry
